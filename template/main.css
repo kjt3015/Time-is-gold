@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*헤더*/
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+
+/*메인 페이지*/
+.mainpage{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.page{
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+
+
+/*왼쪽 부분*/
+.page.l_side{
+    top: 5%;
+}
+
+.left_box{
+    width: 90%;
+    height: 96%;
+    position: relative;
+    top: 2%;
+    bottom: 2%;
+    margin: auto;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 2.5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/*중앙 부분*/
+.page.middle{
+    top: 10%;
+}
+
+.timerimg{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center_box{
+    width: 90%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 5%;
+    right: 5%;
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/*오른쪽 부분*/
+.page.r_side{
+    top: 5%;
+}
+
+.right_box{
+    width: 90%;
+    height: 96%;
+    position: relative;
+    top: 2%;
+    bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 2.5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/*푸터*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+}
+
+/*스마트폰 왼쪽 상자*/
+[class*="l-col-"]{
+    width: 100%;
+    height: 20%;
+}
+
+/*스마트폰 중앙 상자*/
+[class*="m-col-"]{
+    width: 100%;
+    height: 80%;
+}
+
+/*스마트폰 오른쪽 상자*/
+[class*="r-col-"]{
+    width: 100%;
+    height: 20%;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 600px){
+    /*테블릿 왼쪽 상자*/
+    .l-col-s-1{width: 8.33%;}
+    .l-col-s-2{width: 16.66%;}
+    .l-col-s-3{width: 25%;
+        height: 80%;
+        
+    }
+    .l-col-s-4{width: 33.33%;}
+    .l-col-s-5{width: 41.66%;}
+    .l-col-s-6{width: 50%;}
+    .l-col-s-7{width: 58.33%;}
+    .l-col-s-8{width: 66.66%;}
+    .l-col-s-9{width: 75%;}
+    .l-col-s-10{width: 83.33%;}
+    .l-col-s-11{width: 91.66%;}
+    .l-col-s-12{width: 100%;}
+}
+
+@media only screen and (min-width: 768px){
+    /*데스크탑 왼쪽 상자*/
+    .l-col-1{width: 8.33%;}
+    .l-col-2{width: 16.66%;}
+    .l-col-3{width: 25%; height: 80%;}
+    .l-col-4{width: 33.33%;}
+    .l-col-5{width: 41.66%;}
+    .l-col-6{width: 50%;}
+    .l-col-7{width: 58.33%;}
+    .l-col-8{width: 66.66%;}
+    .l-col-9{width: 75%;}
+    .l-col-10{width: 83.33%;}
+    .l-col-11{width: 91.66%;}
+    .l-col-12{width: 100%;}
+}
+
+/*-------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 600px){
+    /*테블릿 중앙 상자*/
+    .m-col-s-1{width: 8.33%;}
+    .m-col-s-2{width: 16.66%;}
+    .m-col-s-3{width: 25%;}
+    .m-col-s-4{width: 33.33%;}
+    .m-col-s-5{width: 41.66%;}
+    .m-col-s-6{width: 50%; height: 80%;}
+    .m-col-s-7{width: 58.33%;}
+    .m-col-s-8{width: 66.66%;}
+    .m-col-s-9{width: 75%;}
+    .m-col-s-10{width: 83.33%;}
+    .m-col-s-11{width: 91.66%;}
+    .m-col-s-12{width: 100%;}
+}
+
+@media only screen and (min-width: 768px){
+    /*데스크탑 중앙 상자*/
+    .m-col-1{width: 8.33%;}
+    .m-col-2{width: 16.66%;}
+    .m-col-3{width: 25%;}
+    .m-col-4{width: 33.33%;}
+    .m-col-5{width: 41.66%;}
+    .m-col-6{width: 50%; height: 80%;}
+    .m-col-7{width: 58.33%;}
+    .m-col-8{width: 66.66%;}
+    .m-col-9{width: 75%;}
+    .m-col-10{width: 83.33%;}
+    .m-col-11{width: 91.66%;}
+    .m-col-12{width: 100%;}
+}
+
+/*-------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 600px){
+    /*테블릿 오른쪽 상자*/
+    .r-col-s-1{width: 8.33%;}
+    .r-col-s-2{width: 16.66%;}
+    .r-col-s-3{width: 25%; height: 80%;}
+    .r-col-s-4{width: 33.33%;}
+    .r-col-s-5{width: 41.66%;}
+    .r-col-s-6{width: 50%;}
+    .r-col-s-7{width: 58.33%;}
+    .r-col-s-8{width: 66.66%;}
+    .r-col-s-9{width: 75%;}
+    .r-col-s-10{width: 83.33%;}
+    .r-col-s-11{width: 91.66%;}
+    .r-col-s-12{width: 100%;}
+}
+
+@media only screen and (min-width: 768px){
+    /*데스크탑 오른쪽 상자*/
+    .r-col-1{width: 8.33%;}
+    .r-col-2{width: 16.66%;}
+    .r-col-3{width: 25%; height: 80%;}
+    .r-col-4{width: 33.33%;}
+    .r-col-5{width: 41.66%;}
+    .r-col-6{width: 50%;}
+    .r-col-7{width: 58.33%;}
+    .r-col-8{width: 66.66%;}
+    .r-col-9{width: 75%;}
+    .r-col-10{width: 83.33%;}
+    .r-col-11{width: 91.66%;}
+    .r-col-12{width: 100%;}
+}
