@@ -3,131 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>시간 관리</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="header"></header>
-    <article class="mainpage">
-        <!-------------------------------------------------------INFORMATION------------------------------------------------------>
-        <div class="page l_side l-col-3 l-col-s-3">
-            <section class="left_box">
-                <div class="l_boxcon">
-                    <h1 class="l_boxname">INFORMATION</h1>
+    <div class="mainpage">
 
-                    <!--PROFILE PART-->
-                    <div>
-                        <div class="profile_img"></div>
-                        <div class="profile_name"><p>파이썬 마스터</p></div>
-                    </div>
-
-                    <!--GOAL PART-->
-                    <div>
-                        <!--PREVIOUS GOAL-->
-                        <div class="back_box1">
-                            <div>
-                                <h2 class="back_box_name1">PREVIOUS GOAL</h2>
-                                <p class="back_box_text1">명상</p>
-                            </div>
-                            <div>
-                                <h2 class="back_box_name2">TARGET TIME</h2>
-                                <p class="back_box_text2">00:00:00</p>
-                            </div>
-                        </div>
-
-                        <!--TODAY GOAL-->
-                        <div class="front_box">
-                            <div>
-                                <h2 class="front_box_name1">TODAY GOAL</h2>
-                                <p class="front_box_text1">날씨 웹 완성하기</p>
-                            </div>
-                            <div>
-                                <h2 class="front_box_name2">TARGET TIME</h2>
-                                <p class="front_box_text2">00:00:00</p>
+        <!--왼쪽 컨테이너-->
+        <section class="l_container l_smart_s_3 l_smart_3">
+            <!--왼쪽 컨테이너 내부-->
+            <div class="l_box_">
+                <!--왼쪽 박스 내부-->
+                <article class="l_article" >
+                    <!--프로필 컨테이너-->
+                    <div class="l_img">
+                        <!--프로필 박스-->
+                        <div class="profile_box m_smartpro_1 m_smartpro_s_1 m_smartpro_l_1">
+                            <!--프로필 박스 내부 레이아웃-->
+                            <div class="profile_inbox">
+                                <!--프로필 박스 내부--> 
+                                <div class="profile_image">
+                                    <!--프로필 이미지박스-->
+                                    <div class="profile_imagebox m_smartproimg_1 m_smartproimg_s_1 m_smartproimg_l_1 m_smartproimg_bm_1">
+                                        <!--유저사진-->
+                                        <img class="user_image user_image_bm_1 user_image_s_1 user_image_l_1 user_image_1" src="/images/profileimg.jpg" alt="profile">
+                                    </div>
+                                </div>
+                                <!--유저 네임 박스-->
+                                <div class="profile_name"><h1 class="user_name us_name_1 us_name_s_1">손원재</h1></div>
                             </div>
                         </div>
-                        
-                        <!--NEXT GOAL-->
-                        <div class="back_box2">
-                            <div>
-                                <h2 class="back_box_name1">NEXT GOAL</h2>
-                                <p class="back_box_text1">운동</p>
-                            </div>
-                            <div>
-                                <h2 class="back_box_name2">TARGET TIME</h2>
-                                <p class="back_box_text2">00:00:00</p>
+
+                        <!--프로필/목표 박스 구분 선-->
+                        <div class="l_line l_line_s_1 l_line_1"></div>
+
+                        <!--목표 박스-->
+                        <div class="goal_box m_smartgoal_1 m_smartgoal_s_1 m_smartgoal_l_1">
+                            <!--목표 박스 내부-->
+                            <div class="goal_inbox m_smartgoalin_1">
+                                <!--이전 목표-->
+                                <div class="previous_goal m_smartprevgoal_1 m_smartprevgoal_s_1 m_smartprevgoal_l_1"></div>
+
+                                <!--현재 목표-->
+                                <div class="present_goal m_smartpresgoal_1 m_smartpresgoal_s_1 m_smartpresgoal_l_1">
+                                    <!--현재 목표 박스 내부 텍스트-->
+                                    <!--목표 이름 박스-->
+                                    <div class="goal_name_box">
+                                        <ul>
+                                            <!--목표 이름 박스 내부 레이아웃-->
+                                            <li class="goal_name_inbox1">
+                                                <h1 class="goalname_text nametext_s_1 nametext_l_1 nametext_1">PRESENT GOAL</h1>
+                                            </li>
+                                            <li class="goal_name_inbox2">
+                                                <input type="text" placeholder="목표를 적어주세요" class="goalmodcon_text modcontext_s_1 modcontext_l_1 modcontext_1">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--목표 시간 박스-->
+                                    <div class="target_time_box">
+                                        <ul>            
+                                            <!--목표 시간 박스 내부 레이아웃-->
+                                            <li class="target_time_inbox1">
+                                                <h1 class="goalname_text nametext_s_1 nametext_l_1 nametext_1">TARGET TIME</h1>
+                                            </li>
+                                            <li class="target_time_inbox2">
+                                                <p class="goalcontent_text contenttext_s_1 contenttext_l_1 contenttext_1">00:00:00</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    </div>
+
+                                <!--다음 목표-->
+                                <div class="next_goal m_smartnextgoal_1 m_smartnextgoal_s_1 m_smartnextgoal_l_1"></div>
                             </div>
                         </div>
-                        
                     </div>
-                </div>
-            </section>
-        </div>
-        <!------------------------------------------------------------------------------------------------------------------------>
+                </article>
+            </div>
+        </section>
 
-        <!----------------------------------------------------------TIMER--------------------------------------------------------->
-        <div class="page middle m-col-6 m-col-s-6">
-            <section class="center_box">
-                <!--TIMER-->
-                <div class="c_boxcon">
-                    <img class="timerimg" src="/images/timer.png" alt="timer">    
-                    <h1 class="timer">00:00:00</h1>
-                    <p class="timer_name">part 2</p>
-                </div>
-            </section>
-        </div>
-        <!------------------------------------------------------------------------------------------------------------------------>
-
-        <div class="page r_side r-col-3 r-col-s-3">
-            <div class="right_box">
-                <!-----------------------------------------------------------MEMO---------------------------------------------------------->
-                <section class="right_box1">
-                    <div class="r_boxcon">
-                        <h1 class="r_boxname1">MEMO</h1>
-
-                        <!--MEMO NAME-->
-                        <div class="memo_name">MEMO 1</div>
-
-                        <!--LIST-->
-                        <div class="list"></div>
-
-                        <!--MEMO TEXT-->
-                        <div class="memo_box"><textarea></textarea></div>
+        <!--중앙 컨테이너-->
+        <section class="m_container m_smart_s_6 m_smart_3">
+            <!--중앙 컨테이너 내부-->
+            <div class="m_box_">
+                <!--중앙 박스 내부-->
+                <article class="m_article">
+                    <!--스마트폰 중앙 타이머-->
+                    <div class="m_img m_smartimg_s_1 m_smartimg_l_1 m_smartimg_1" >
+                        <!--타이머-->
+                        <h1 class="maintimer m_smarttimer_1 m_smarttimer_s_1 m_smarttimer_l_1">00:00:00</h1>
+                        <!--파트-->
+                        <p class="timer_part m_smartpart_1 m_smartpart_s_1 m_smartpart_l_1">PART 1</p>
                     </div>
-                </section>
-                <!------------------------------------------------------------------------------------------------------------------------>
+                </article>
+            </div>
+        </section>
 
-                <!---------------------------------------------------------TIMELINE-------------------------------------------------------->
-                <section class="right_box2">
-                    <h1 class="r_boxname2">TIMELINE</h1>
+        <!--오른쪽 컨테이너-->
+        <section class="r_container r_smart_s_3 m_smart_3">
+            <!--오른쪽 컨테이너 내부-->
+            <div class="r_box_">
+                <!--오른쪽 박스 내부-->
+                <article class="r_article">
+                    <!--오른쪽 박스 내부 레이아웃-->
+                    <div class="r_imgbox">
+                        <div class="r_img1 r_img1_s_1 r_img1_l_1 r_img1_1">
+                            <div class="memonamebox"><h1 class="memoname memoname_s_1 memoname_l_1 memoname_1">MEMO</h1></div>
 
-                    <div>
-                        <!--PART 1-->
-                        <div class="timeline_box1"><p class="timeline_text1">PART 1 | 00:22:36</p></div>
-                        
-                        <!--REST 1-->
-                        <div class="timeline_box2"><p class="timeline_text2">REST 1 | 00:06:08</p></div>
-                        
-                        <!--PART 2-->
-                        <div class="timeline_box1"><p class="timeline_text1">PART 2 | 00:00:00</p></div>
-                        
-                        <!--REST 2-->
-                        <div class="timeline_box2"><p class="timeline_text2"></p></div>
-                                
-                        <!--ETC CIRCLE1-->
-                        <div class="etc_cir1"></div>
-                        
-                        <!--ETC CIRCLE2-->
-                        <div class="etc_cir2"></div>
+                            <textarea class="memo memo_s_1 memo_l_1 memo_1" placeholder="메모작성"></textarea>
+
+                        </div>
+
+                        <div class="r_img2 r_img2_s_1 r_img2_l_1 r_img2_1">
+
+                            <div class="returnbutton"></div>
+                            <div class="timeline_1"></div>
+                            <div class="rest_1"></div>
+                            <div class="timeline_2"></div>
+                            <div class="rest_2"></div>
+                            <div class="nextbutton"></div>
+
+                        </div>
                     </div>
-                </section>
-                <!------------------------------------------------------------------------------------------------------------------------>
-            </div>    
-        </div>
-
-    </article>
-
-    <footer class="footer"></footer>
+                </article>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
