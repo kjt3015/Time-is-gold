@@ -8,9 +8,6 @@
     font-family: 'NanumSquare', sans-serif;
 }
 
-body{
-}
-
 li{
     list-style-type: none;
 }
@@ -28,11 +25,11 @@ li{
 /*----------------------------반응형 웹 틀----------------------------*/
 .l_container{
     float: left;
-    z-index: 500;
 }
 
 .m_container{
     float: left;
+    z-index: 1000;
 }
 
 .r_container{
@@ -52,9 +49,7 @@ li{
     width: 100%;
     height: 50%;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25%;
 }
 
 /*스마트폰 오른쪽 컨테이너*/
@@ -67,33 +62,19 @@ li{
 
 
 @media only screen and (min-width: 600px){
-    /*태블릿 왼쪽 상자*/
-    .l_smart_s_3{
-        width: 100%;
-        height: 30%;
-        position: fixed;
-        left: 0;        
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*노트북 왼쪽 상자*/
-    .l_smart_l_3{
-        width: 30%;
-        height: 80%;
-        position: fixed;
-        top: 10%;
-        left: 0;        
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    /*데스크탑 왼쪽 상자*/
-    .l_smart_3{
-        width: 25%;
+    /*테블릿 왼쪽 상자*/
+    .l_smart_s_3{width: 25%;
         height: 100%;
         position: fixed;
-        top: 0;
+        left: 0;        
+    }
+}
+
+@media only screen and (min-width: 768px){
+    /*데스크탑 왼쪽 상자*/
+    .l_smart_3{width: 25%;
+        height: 100%;
+        position: fixed;
         left: 0;        
     }
 }
@@ -102,43 +83,38 @@ li{
 
 
 @media only screen and (min-width: 600px){
-    /*태블릿 중앙 상자*/
-    .m_smart_s_6{width: 100%;
+    /*테블릿 중앙 상자*/
+    .m_smart_s_6{width: 50%;
         height: 100%;
+        position: fixed;
+        left: 25%;
+        top: 0;
     }
 }
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 768px){
     /*데스크탑 중앙 상자*/
     .m_smart_6{width: 50%;
         height: 100%;
+        position: fixed;
+        left: 25%;
+        top: 0;
     }
 }
 
 
 
 @media only screen and (min-width: 600px){
-    /*태블릿 오른쪽 상자*/
-    .r_smart_s_3{width: 100%;
-        height: 30%;
+    /*테블릿 오른쪽 상자*/
+    .r_smart_s_3{width: 25%;
+        height: 100%;
         position: fixed;
         right: 0;
-        top: 70%;
+        top: 0;
     }
 }
 
-@media only screen and (min-width: 769px){
-    /*노트북 오른쪽 상자*/
-    .r_smart_l_3{
-        width: 30%;
-        height: 80%;
-        position: fixed;
-        right: 0;
-        top: 10%;     
-    }
-}
-
-@media only screen and (min-width: 1025px){
+@media only screen and (min-width: 768px){
     /*데스크탑 오른쪽 상자*/
     .r_smart_3{width: 25%;
         height: 100%;
@@ -239,96 +215,29 @@ li{
     background-color: white;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    z-index: 500;
 }
-
-/*잠금 버튼*/
-.lock_button{
-    border-radius: 50%;
-    background-color: #e6e6e6;
-    position: absolute;
-    top: 17.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/*스마트폰 잠금 버튼*/
-[class*="lock_button_"]{
-    width: 35px;
-    height: 35px;
-}
-
-@media only screen and (min-width: 321px){
-    /*큰 스마트폰 잠금 버튼*/
-    .lock_button_bm_1{
-        width: 35px;
-        height: 35px;
-    }
-}
-
-@media only screen and (min-width: 600px){
-    /*태블릿 잠금 버튼*/
-    .lock_button_s_1{
-        width: 50px;
-        height: 50px;
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*노트북 잠금 버튼*/
-    .lock_button_l_1{
-        width: 50px;
-        height: 50px;
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    /*데스크탑 잠금 버튼*/
-    .lock_button_1{
-        width: 70px;
-        height: 70px;
-    }
-}
-
-/*--------*/
-.lock_head{
-    height: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.lock_body{
-    height: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-/*--------*/
 
 /*스마트폰 중앙 타이머*/
 [class*="m_smartimg_"]{
-    width: 250px;
-    height: 250px;
-    border-radius: 125px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 중앙 타이머*/
+    /*테블릿 중앙 타이머*/
     .m_smartimg_s_1{
-        width: 400px;
-        height: 400px;
-        border-radius: 200px;
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
     }
 }
 
 @media only screen and (min-width: 769px){
     /*노트북 중앙 타이머*/
     .m_smartimg_l_1{
-        width: 400px;
-        height: 400px;
+        width: 500px;
+        height: 500px;
         border-radius: 250px;
     }
 }
@@ -341,113 +250,6 @@ li{
         border-radius: 375px;
     }
 }
-
-/*종료 버튼 테두리*/
-.end_button{
-    border-radius: 50%;
-    background-color: #ff3333;
-    position: absolute;
-    top: 87.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3000;
-    cursor: pointer;
-}
-
-/*스마트폰 종료 버튼 테두리*/
-[class*="end_button_"]{
-    width: 40px;
-    height: 40px;
-}
-
-@media only screen and (min-width: 600px){
-    /*태블릿 종료 버튼 테두리*/
-    .end_button_s_1{
-        width: 60px;
-        height: 60px;
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*노트북 종료 버튼 테두리*/
-    .end_button_l_1{
-        width: 60px;
-        height: 60px;
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    /*데스크탑 종료 버튼 테두리*/
-    .end_button_1{
-        width: 85px;
-        height: 85px;
-    }
-}
-
-/*종료버튼 공백*/
-.end_button_blank{
-    background-color: #fff;
-    width: 95%;
-    height: 95%;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/*----------------*/
-
-/*종료 버튼*/
-.end_in_button{
-    background-color: #ff3333;
-    width: 92.5%;
-    height: 92.5%;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/*종료 버튼 텍스트*/
-.end_button_text{
-    width: 100%;
-    height: auto;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bolder;
-}
-
-/*스마트폰 종료 버튼 텍스트*/
-[class*="end_button_text_"]{
-    font-size: 8px;
-}
-
-@media only screen and (min-width: 600px){
-    /*태블릿 종료 버튼 텍스트*/
-    .end_button_text_s_1{
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*노트북 종료 버튼 텍스트*/
-    .end_button_text_l_1{
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    /*데스크탑 종료 버튼 텍스트*/
-    .end_button_text_1{
-        font-size: 18px;
-    }
-}
-
 /*----------------------------------------------------------------*/
 
 /*-------------------------오른쪽 박스 내부-------------------------*/
@@ -490,10 +292,10 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 메모창*/
+    /*테블릿 메모창*/
     .r_img1_s_1{
-        width: 45%;
-        height: 100%;
+        width: 100%;
+        height: 40%;
         display: block;
     }
 }
@@ -519,16 +321,15 @@ li{
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
-/*------------------------------------------------------------------------------아래쪽 오늘날짜창------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------아래쪽 타임라인창------------------------------------------------------------------------------*/
 .r_img2{
+    margin: 0;
     position: absolute;
-    top: 0;
-    left: 0;
     background-color: white;
     border-radius: 30px;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
-/*스마트폰 오늘날짜창*/
+/*스마트폰 타임라인창*/
 [class*="r_img2_"]{
     width: 100%;
     height: 100%;
@@ -536,23 +337,19 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 오늘날짜창*/
+    /*테블릿 타임라인창*/
     .r_img2_s_1{
-        position: absolute;
-        top: 0;
-        left: 55%;
-        width: 45%;
-        height: 100%;
+        top: 60%;
+        width: 100%;
+        height: 40%;
         display: block;
     }
 }
 
 @media only screen and (min-width: 769px){
-    /*노트북 오늘날짜창*/
+    /*노트북 타임라인창*/
     .r_img2_l_1{
-        position: absolute;
         top: 60%;
-        left: 0;
         width: 100%;
         height: 40%;
         display: block;
@@ -560,11 +357,9 @@ li{
 }
 
 @media only screen and (min-width: 1025px){
-    /*데스크탑 오늘날짜창*/
+    /*데스크탑 타임라인창*/
     .r_img2_1{
-        position: absolute;
         top: 60%;
-        left: 0;
         width: 100%;
         height: 40%;
         display: block;
@@ -598,10 +393,10 @@ li{
 
 
 @media only screen and (min-width: 600px){
-    /*태블릿 프로필 박스*/
+    /*테블릿 프로필 박스*/
     .m_smartpro_s_1{
-        width: 33%;
-        height: 100%;
+        width: 100%;
+        height: 33%;
     }
 }
 
@@ -669,15 +464,15 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 유저 이미지*/
+    /*테블릿 유저 이미지*/
     .user_image_s_1{
-        width:85px;
+        width:70px;
     }
 }
 @media only screen and (min-width: 769px){
     /*노트북 유저 이미지*/
     .user_image_l_1{
-        width:85px;
+        width:95px;
     }
 }
 
@@ -715,18 +510,18 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 프로필 박스*/
+    /*테블릿 프로필 박스*/
     .m_smartproimg_s_1{
-        width:85px;
-        height: 85px;
+        width:70px;
+        height: 70px;
         border-radius: 35px;
     }
 }
 @media only screen and (min-width: 769px){
     /*노트북 프로필 박스*/
     .m_smartproimg_l_1{
-        width:85px;
-        height: 85px;
+        width:95px;
+        height: 95px;
         border-radius: 55px;
     }
 }
@@ -754,7 +549,6 @@ li{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%;
     transform: translate(-50%, -50%);
     color: #333333;
     font-weight: 900;
@@ -767,18 +561,11 @@ li{
 @media only screen and (min-width: 600px){
     /*태블릿 유저이름*/
     .us_name_s_1{
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
 @media only screen and (min-width: 769px){
-    /* 노트북 유저이름*/
-    .us_name_l_1{
-        font-size: 14px;
-    }
-}
-
-@media only screen and (min-width: 1025px){
     /* 데스크탑 유저이름*/
     .us_name_1{
         font-size: 16px;
@@ -806,10 +593,11 @@ li{
 @media only screen and (min-width: 600px){
     /*태블릿 왼쪽 라인*/
     .l_line_s_1{
-        top: 10%;
-        left: 33%;
-        height: 80%;
-        border-right: 1px solid #b3b3b3;
+        top: 33%;
+        left: 10%;
+        width: 80%;
+        height: 0;
+        border-top: 1px solid #b3b3b3;
     }
 }
 
@@ -840,10 +628,10 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 목표 박스*/
+    /*테블릿 목표 박스*/
     .m_smartgoal_s_1{
-        width: 67%;
-        height: 100%;
+        width: 100%;
+        height: 67%;
     }
 }
 
@@ -880,14 +668,6 @@ li{
 
 @media only screen and (min-width: 600px){
     /*태블릿 데스크탑 목표 박스 내부*/
-    .m_smartgoalin_s_1{
-        height: 90%;
-        top: 5%;
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*태블릿 데스크탑 목표 박스 내부*/
     .m_smartgoalin_1{
         height: 60%;
         top: 20%;
@@ -912,11 +692,12 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 이전목표 박스*/
+    /*테블릿 이전목표 박스*/
     .m_smartprevgoal_s_1{
-        width: 60%;
-        height: 70%;
-        top: 15%;
+        width: 80%;
+        height: 40%;
+        top: 0;
+        left: 10%;
     }
 }
 @media only screen and (min-width: 769px){
@@ -959,12 +740,12 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 현재목표 박스*/
+    /*테블릿 현재목표 박스*/
     .m_smartpresgoal_s_1{
-        width: 80%;
-        height: 100%;
-        top: 0;
-        left: 10%;
+        width: 100%;
+        height: 80%;
+        top: 10%;
+        left: 0;
     }
 }
 @media only screen and (min-width: 769px){
@@ -1000,21 +781,20 @@ li{
     font-weight: lighter;
 }
 
-/*스마트폰 제목 텍스트*/
 [class*="nametext_"]{
     font-size: 8px;
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 제목 텍스트*/
+    /*테블릿 제목 텍스트*/
     .nametext_s_1{
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 @media only screen and (min-width: 769px){
     /*노트북 제목 텍스트*/
     .nametext_l_1{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -1039,29 +819,28 @@ li{
     background: none;
     border: none;
     text-align: center;
-    outline: none;
 }
-/*스마트폰 수정가능한 내용 텍스트*/
+
 [class*="modcontext_"]{
     font-size: 10px;
 
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 수정가능한 내용 텍스트*/
+    /*테블릿 제목 텍스트*/
     .modcontext_s_1{
-        font-size: 20px;
+        font-size: 12px;
     }
 }
 @media only screen and (min-width: 769px){
-    /*노트북 수정가능한 내용 텍스트*/
+    /*노트북 제목 텍스트*/
     .modcontext_l_1{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 @media only screen and (min-width: 1025px){
-    /*데스크탑 수정가능한 내용 텍스트*/
+    /*데스크탑 제목 텍스트*/
     .modcontext_1{
         font-size: 20px;
     }
@@ -1080,27 +859,26 @@ li{
     font-weight: bolder;
 }
 
-/*스마트폰 내용 텍스트*/
 [class*="contenttext_"]{
     font-size: 10px;
 
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 내용 텍스트*/
+    /*테블릿 제목 텍스트*/
     .contenttext_s_1{
-        font-size: 20px;
+        font-size: 12px;
     }
 }
 @media only screen and (min-width: 769px){
-    /*노트북 내용 텍스트*/
+    /*노트북 제목 텍스트*/
     .contenttext_l_1{
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 @media only screen and (min-width: 1025px){
-    /*데스크탑 내용 텍스트*/
+    /*데스크탑 제목 텍스트*/
     .contenttext_1{
         font-size: 20px;
     }
@@ -1207,11 +985,12 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 다음목표 박스*/
+    /*테블릿 다음목표 박스*/
     .m_smartnextgoal_s_1{
-        width: 60%;
-        height: 70%;
-        top: 15%;
+        width: 80%;
+        height: 40%;
+        top: 60%;
+        left: 10%;
     }
 }
 @media only screen and (min-width: 769px){
@@ -1245,7 +1024,6 @@ li{
     transform: translate(-50%, -50%);
     color: #333333;
     font-weight: 800;
-    z-index: 1500;
 }
 
 /*스마트폰 타이머*/
@@ -1254,15 +1032,15 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 타이머*/
+    /*테블릿 타이머*/
     .m_smarttimer_s_1{
-        font-size: 60px;
+        font-size: 55px;
     }
 }
 @media only screen and (min-width: 769px){
     /*노트북 타이머*/
     .m_smarttimer_l_1{
-        font-size: 60px;
+        font-size: 90px;
     }
 }
 
@@ -1290,16 +1068,16 @@ li{
 }
 
 @media only screen and (min-width: 600px){
-    /*태블릿 타이머 파트*/
+    /*테블릿 타이머 파트*/
     .m_smartpart_s_1{
-        font-size: 28px;
+        font-size: 20px;
     }
 }
 
 @media only screen and (min-width: 769px){
     /*노트북 타이머 파트*/
     .m_smartpart_l_1{
-        font-size: 28px;
+        font-size: 36px;
     }
 }
 
@@ -1315,11 +1093,11 @@ li{
 /*-----------------------------------------------------메모 속성------------------------------------------------------*/
 
 .memonamebox{
-    width: 85%;
+    width: 90%;
     height: 70%;
     position: absolute;
     top: 10%;
-    left: 7.5%;
+    left: 5%;
 }
 
 
@@ -1336,7 +1114,7 @@ li{
 @media only screen and (min-width: 600px){
     /*태블릿 메모이름*/
     .memoname_s_1{
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -1356,11 +1134,11 @@ li{
 
 /*textarea 속성*/
 .memo{
-    width: 85%;
+    width: 90%;
     height: 70%;
     position: absolute;
     top: 25%;
-    left: 7.5%;
+    left: 5%;
     border: 0;
     font-weight: bold;
     word-break: break-all;
@@ -1370,7 +1148,6 @@ li{
     padding-left: 2px;
     color: #333333;
     background: none;
-    outline: none;
 }
 /*------------*/
 
@@ -1383,8 +1160,8 @@ li{
 @media only screen and (min-width: 600px){
     /*태블릿 메모*/
     .memo_s_1{
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 10px;
+        line-height: 16px;
     }
 }
 
@@ -1407,389 +1184,67 @@ li{
 
 /*----------------------------------------------------------------------------------------------------------------*/
 
-/*----------------------------------------------오늘날짜 박스 내부--------------------------------------------------*/
+/*----------------------------------------------타임라인 박스 내부--------------------------------------------------*/
 
-/*오늘 날짜 컨테이너*/
-.todaycon{
-    width: 85%;
-    height: 80%;
+.returnbutton{
+    background-color: #e6e6e6;
+    width: 20%;
+    height: 2.5%;
+    border-radius: 500px;
     position: absolute;
     top: 10%;
-    left: 7.5%;
-    border: 0;
-    margin: 0 auto;
+    left: 40%;
 }
-/*--------*/
 
-/*오늘 날짜 박스*/
-.today_datebox{
-    width: 100%;
+.timeline_1{
+    background-color: #333333;
+    width: 80%;
     height: 15%;
+    border-radius: 500px;
     position: absolute;
-    border-bottom: 1px solid #808080;
+    top: 17.5%;
+    left: 10%;
 }
 
-/*오늘 날짜*/
-.today_date{
-    color: #333333;
-    font-weight: normal;
+.rest_1{
+    background-color: #e6e6e6;
+    width: 80%;
+    height: 15%;
+    border-radius: 500px;
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    top: 35%;
+    left: 10%;
 }
 
-/*스마트폰 오늘 날짜*/
-[class*="today_date_"]{
-    font-size: 12px;
-}
-
-@media only screen and (min-width: 321px){
-    /*큰 스마트폰 오늘 날짜*/
-    .today_date_bm_1{
-        font-size: 14px;
-    }
-}
-
-@media only screen and (min-width: 600px){
-    /*태블릿 오늘 날짜*/
-    .today_date_s_1{
-        font-size: 18px;
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*노트북 오늘 날짜*/
-    .today_date_l_1{
-        font-size: 16px;
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    /*데스크탑 오늘 날짜*/
-    .today_date_1{
-        font-size: 20px;
-    }
-}
-
-/*--------*/
-
-/*세부 목표 박스*/
-.today_detailbox{
-    width: 100%;
-    height: 10%;
+.timeline_2{
+    background-color: #333333;
+    width: 80%;
+    height: 15%;
+    border-radius: 500px;
     position: absolute;
-    top: 15%;
-}
-/*--------*/
-
-/*세부 목표*/
-.today_detail{
-    color: #808080;
-    font-weight: 700;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    top: 52.5%;
+    left: 10%;
 }
 
-/*스마트폰 세부 목표*/
-[class*="today_detail_"]{
-    font-size: 8px;
-    display: none;
-}
-
-@media only screen and (min-width: 600px){
-    /*태블릿 세부 목표*/
-    .today_detail_s_1{
-        font-size: 10px;
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*노트북 세부 목표*/
-    .today_detail_l_1{
-        font-size: 8px;
-        display: block;
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    /*데스크탑 세부 목표*/
-    .today_detail_1{
-        font-size: 12px;
-        display: block;
-    }
-}
-
-/*--------*/
-
-/*세부 목표 리스트 박스*/
-.detail_listbox{
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    top: 25%;
-}
-/*--------*/
-
-/*세부 목표 리스트*/
-.detail_list{
-    width: 100%;
-    height: 100%;
-    color: #333333;
-    font-weight: bolder;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: none;
-    border: none;
-    text-align: center;
-    resize: none;
-    outline: none;
-}
-
-/*스마트폰 세부 목표 리스트*/
-[class*="detail_list_"]{
-    font-size: 8px;
-    line-height: 16px;
-}
-
-@media only screen and (min-width: 321px){
-    /*큰 스마트폰 세부 목표 리스트*/
-    .detail_list_bm_1{
-        font-size: 12px;
-        line-height: 24px;
-    }
-}
-
-@media only screen and (min-width: 600px){
-    /*태블릿 세부 목표 리스트*/
-    .detail_list_s_1{
-        font-size: 14px;
-        line-height: 28px;
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*노트북 세부 목표 리스트*/
-    .detail_list_l_1{
-        font-size: 12px;
-        line-height: 24px;
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    /*데스크탑 세부 목표 리스트*/
-    .detail_list_1{
-        font-size: 16px;
-        line-height: 32px;
-    }
-}
-
-/*--------*/
-
-/*평균 박스*/
-.averagebox{
-    width: 100%;
-    height: 25%;
-    position: absolute;
-    top: 75%;
-    background-color: #808080;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-/*--------*/
-
-/*총 작업시간 박스*/
-.l_averagebox{
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    text-align: center;
-}
-
-/*평균 박스 텍스트*/
-
-/*제목 텍스트*/
-.total_name{
-    width: 100%;
-    color: white;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: lighter;
-}
-
-/*스마트폰 제목 텍스트*/
-[class*="total_name_"]{
-    font-size: 8px;
-}
-
-@media only screen and (min-width: 321px){
-    /*큰 스마트폰 제목 텍스트*/
-    .total_name_bm_1{
-        font-size: 8px;
-    }
-}
-
-@media only screen and (min-width: 600px){
-    /*태블릿 제목 텍스트*/
-    .total_name_s_1{
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*노트북 제목 텍스트*/
-    .total_name_l_1{
-        font-size: 10px;
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    /*데스크탑 제목 텍스트*/
-    .total_name_1{
-        font-size: 14px;
-    }
-}
-
-/*--------*/
-
-/*시간 텍스트*/
-.total_time{
-    width: 100%;
-    color: white;
+.rest_2{
+    background-color: #e6e6e6;
+    width: 80%;
+    height: 15%;
+    border-radius: 500px;
     position: absolute;
     top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bolder;
+    left: 10%;
 }
 
-/*스마트폰 시간 텍스트*/
-[class*="total_time_"]{
-    font-size: 8px;
-}
-
-@media only screen and (min-width: 321px){
-    /*큰 스마트폰 시간 텍스트*/
-    .total_time_bm_1{
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 600px){
-    /*태블릿 시간 텍스트*/
-    .total_time_s_1{
-        font-size: 14px;
-    }
-}
-
-@media only screen and (min-width: 769px){
-    /*노트북 시간 텍스트*/
-    .total_time_l_1{
-        font-size: 12px;
-    }
-}
-
-@media only screen and (min-width: 1025px){
-    /*데스크탑 시간 텍스트*/
-    .total_time_1{
-        font-size: 18px;
-    }
-}
-
-/*--------*/
-
-/*----------------*/
-
-/*총 휴식시간 박스*/
-.r_averagebox{
-    width: 50%;
-    height: 100%;
+.nextbutton{
+    background-color: #333333;
+    width: 20%;
+    height: 2.5%;
+    border-radius: 500px;
     position: absolute;
-    left: 50%;
-    text-align: center;
+    top: 90%;
+    left: 40%;
 }
 
-/*----------------*/
-
-/*--------*/
 
 /*----------------------------------------------------------------------------------------------------------------*/
-
-
-/*기능구현 파트*/
-
-/*타이머 버튼*/
-#startStop{
-    border: none;
-    background: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2000;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    outline: none;
-    overflow: hidden;
-}
-
-/*타이머 버튼 효과*/
-
-span{
-    position: absolute;
-    background: #e6e6e6;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    border-radius: 50%;
-    animation: animate 1s linear infinite;
-    z-index: 2000;
-}
-
-@keyframes animate
-{
-    0%
-    {
-        width: 0%;
-        height: 0%;
-        opacity: 0.1;
-    }
-    100%
-    {
-        width: 400%;
-        height: 400%;
-        opacity: 0;
-    }
-}
-
-/*---------------*/
-
-/*잠금 버튼*/
-#lockbutton{
-    z-index: 2500;
-}
-
-#lockbutton:hover .lock_head{
-    top: 45%;
-}
-
-#lockbutton:hover .lock_body{
-    top: 55%;
-}
-
-.lock_cover{
-    top: 50%;
-    width: 100%;
-    height: 100%;    
-    background-color:rgba(230, 230, 230, 0.5);
-    border-radius: 50%;
-    z-index: 3500;
-    display: none;
-}
-/*---------*/
