@@ -8,9 +8,6 @@
     font-family: 'NanumSquare', sans-serif;
 }
 
-body{
-}
-
 li{
     list-style-type: none;
 }
@@ -1797,4 +1794,8 @@ span{
 #jgrid{
     display: grid;
     grid-template-rows: 1fr 9fr;
+}
+
+option{
+    text-align: center;
 }
